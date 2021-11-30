@@ -35,6 +35,10 @@ button {
   font-family: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 main {
   display: flex;
   align-items: center;
