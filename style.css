@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --ff-inconsolata: "Inconsolata", monospace;
+  --ff-space-mono: "Space Mono", monospace;
+  --ff-montserrat: "Montserrat", sans-serif;
+
+  --color-gray1: #333333;
+  --color-gray2: #4f4f4f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-space-mono);
+  margin: 40px 77px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+main > .img {
+  min-width: 286.63px;
+  max-width: 539.22px;
+  min-height: 238px;
+  max-height: 447.43px;
+}
+
+.text > h1 {
+  min-width: 350px;
+  max-width: 447.43px;
+  font-weight: 700;
+  font-size: clamp(48px, 1vw, 64px);
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+}
+
+.text > p {
+  min-width: 328px;
+  max-width: 381px;
+  margin-bottom: 64px;
+  font-size: clamp(18px, 3vw, 24px);
+}
+
+.text > button {
+  padding: 1rem 2rem;
+  font-size: 14px;
+  color: white;
+  background-color: var(--color-gray1);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+footer {
+  position: absolute;
+  font-size: 14px;
+  font-family: var(--ff-montserrat);
+  color: #bdbdbd;
+  bottom: 2%;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
