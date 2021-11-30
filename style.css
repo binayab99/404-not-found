@@ -41,6 +41,7 @@ button:hover {
 
 main {
   display: flex;
+  gap: 118px;
   align-items: center;
   justify-content: center;
   height: 90vh;
